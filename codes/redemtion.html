@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Remainder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/style/style.css"/>
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/bootstrap.js"></script>
+    <script src="js/admin/main.js"></script>    
+<style>
+  .credit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .inputimg{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  #message.success {
+    color: #008000; 
+}
+
+#message.error {
+    color: #FF0000; 
+}
+</style>
+</head>
+
+<body>
+<!-- Header start -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12">
+
+
+
+<div class="row">
+<br>
+<div class="col-xs-12 col-sm-12">
+<center>
+<h2><strong>E Waste Facility Locater</strong></h3></center>
+
+</div>
+</div>
+<br><br> 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+</div>      
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav navbar-left">
+<a class="navbar-brand" href="index.html"></a>
+      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+
+      <li><a href="about.html"><span class="fa fa-question-circle-o"></span> About</a></li>
+      <li><a href="service.html"><span class="fa fa-question-circle-o"></span> Service</a></li>
+      <li><a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact us</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-sign-in"></i> Sign In<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="login.html"><span class="fa fa-sign-in"></span> Sign In </a></li>
+          <li><a href="register.html"><span class="fa fa-user-plus"></span> Sign Up </a></li>
+          <li><a href="password.html"><span class="fa fa-unlock-alt"></span> Change Password </a></li>
+        </ul>
+       </li> 
+  </ul> 
+     </div> 
+  </div>
+</nav>   
+<!-- Header end  -->
+<div class="inputimg">
+  <input type="file" id="fileInput" name="fileInput" accept="image/*"><br>
+  <button class="btn btn-primary" onclick="displayMessage()">Submit</button>
+  <div id="message"></div>
+</div>
+<h3 class="credit">Your Credits : 50</h3>
+
+<!-- Card Start -->
+               
+<div id="row">
+    <div class="col-xs-12 col-sm-12 form-group">
+        <div class="col-xs-12 col-sm-1 form-group"></div>
+         
+    <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+    
+    <center><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQkbPw7JIiHCcEhGHa9rJYhxmEiEs4Smg9GDBLIKm28r-Lb__VNHqQh4wXwxBOJhEt4q-D64khOgzvh2OGapt8UIYIGXhjetGHDXHLuJFSSVFac-GP5__O0vA" width="300" height="150"/></center>
+    <h1>50 Points</h1> 
+    <br>
+    <h5><strong id="boxtitle"><button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+    <br>
+    </div>
+    
+    <div class="col-xs-12 col-sm-1 form-group"></div>
+    <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+    
+    <center><img src="https://www.solo.in/image/cache/Web%20upload%201500px%20Courier/NA501/black/NA501-A-1000x1000.jpg" width="300" height="150"/></center>
+    <h1>50 Points</h1>
+    <br>
+    <h5><strong id="boxtitle"> <button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+    <br>
+    </div>
+    
+    <div class="col-xs-12 col-sm-1 form-group"></div>
+    <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+    
+    <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSbRGtczdWSMF858AUYvYG1AmAGg3OpTHCyZxkGqriwX8zoglBQlRidxzTDGdxuPzZs_o&usqp=CAU" width="300" height="150"/></center>
+    <h1>50 Points</h1>
+    <br>
+    <h5><strong id="boxtitle"> <button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+    <br>
+    </div>
+    
+    </div>
+    </div>
+    
+    </div>
+    </div> 
+    </div>
+    <div id="row">
+        <div class="col-xs-12 col-sm-12 form-group">
+            <div class="col-xs-12 col-sm-1 form-group"></div>
+             
+        <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+        
+        <center><img src="https://contents.mediadecathlon.com/p2267769/k$c3aa56412151f4efeea9413d1d1ba614/17l-backpack-essential-blue.jpg?&f=520x520" width="300" height="150"/></center>
+        <h1>100 Points</h1> 
+        <br>
+        <h5><strong id="boxtitle"><button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+        <br>
+        </div>
+        
+        <div class="col-xs-12 col-sm-1 form-group"></div>
+        <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+        
+        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw6_dLDV0CTzCxQjx0qHGn5G2u-SUUutSS5Q&usqp=CAU" width="300" height="150"/></center>
+        <h1>100 Points</h1>
+        <br>
+        <h5><strong id="boxtitle"> <button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+        <br>
+        </div>
+        
+        <div class="col-xs-12 col-sm-1 form-group"></div>
+        <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+        
+        <center><img src="https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/kb700/kb700-kbm-02-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=4859&hei=2724&qlt=100,1&resMode=sharp2&size=4859,2724&chrss=full&imwidth=5000" width="300" height="150"/></center>
+        <h1>100 Points</h1>
+        <br>
+        <h5><strong id="boxtitle"> <button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+        <br>
+        </div>
+        
+        </div>
+        </div>
+        
+        </div>
+        </div> 
+        </div>
+        <div id="row">
+            <div class="col-xs-12 col-sm-12 form-group">
+                <div class="col-xs-12 col-sm-1 form-group"></div>
+                 
+            <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+            
+            <center><img src="https://www.hindustantimes.com/ht-img/img/2023/09/13/1600x900/home_theatres_1694584601984_1694584614166.jpg" width="300" height="150"/></center>
+            <h1>500 Points</h1> 
+            <br>
+            <h5><strong id="boxtitle"><button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+            <br>
+            </div>
+            
+            <div class="col-xs-12 col-sm-1 form-group"></div>
+            <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+            
+            <center><img src="https://www.hindustantimes.com/ht-img/img/2023/09/26/550x309/best_TV_in_India_1695736021888_1695736035643.JPG" width="300" height="150"/></center>
+            <h1>500 Points</h1>
+            <br>
+            <h5><strong id="boxtitle"> <button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+            <br>
+            </div>
+            
+            <div class="col-xs-12 col-sm-1 form-group"></div>
+            <div class="col-xs-12 col-sm-3 form-group" id="serviceone"> 
+            
+            <center><img src="https://cdn.thewirecutter.com/wp-content/media/2023/10/smartphone-2048px-4861.jpg?auto=webp&quality=75&crop=1.91:1&width=1200" width="300" height="150"/></center>
+            <h1>500 Points</h1>
+            <br>
+            <h5><strong id="boxtitle"> <button id="redeemButton" onclick="showMessage()" class="btn btn-primary">Redeem</button></strong></h5>
+            <br>
+            </div>
+            
+            </div>
+            </div>
+            
+            </div>
+            </div> 
+            </div>
+<!-- card end -->
+<div style="margin-top: 300px;">.</div>
+<!-- Footer Start -->
+<br><br>
+
+<div class="row" id="footer">
+
+	<div class="col-xs-12 col-sm-12">
+
+<center><strong>E Waste Facility Locater</strong></center>
+<br>
+
+<div class="col-xs-12 col-sm-1"></div>
+<div class="col-xs-12 col-sm-3">
+
+<ul>
+ <li><a><i class ="fa fa-facebook"></i> Facebook</a></li>
+  <li><a><i class ="fa fa-envelope"></i> Google</a></li>
+ <li><a><i class ="fa fa-twitter"></i> Twitter</a></li>
+  <li><a><i class ="fa fa-youtube"></i> Youtube</a></li>
+</ul>
+
+</div>
+
+<div class="col-xs-12 col-sm-3">
+
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Service</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</div>
+
+<div class="col-xs-12 col-sm-5">
+
+<ul>
+  <li>Name : E Waste Facility Locater</li>
+  <li>Email : info@ewastefacility.com</li>
+  <li>Contact : +91-xxxxxxxxxx</li>
+</ul>
+
+</div>
+
+</div>
+						
+</div>
+
+
+<!-- Footer End -->
+<script>
+  function showMessage() {
+    alert('Congratulations successfully redeemed');
+  }
+  function displayMessage() {
+    const input = document.getElementById('fileInput');
+    const messageContainer = document.getElementById('message');
+
+    if (input.files && input.files[0]) {
+        const message = 'Image uploaded successfully!';
+        messageContainer.textContent = message;
+        messageContainer.className = 'success';
+    } else {
+        const message = 'Please select an image.';
+        messageContainer.textContent = message;
+        messageContainer.className = 'error';
+    }
+}
+</script>
+
+
+</body>
+</html>
+
+
+

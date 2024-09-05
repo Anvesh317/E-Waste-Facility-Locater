@@ -1,0 +1,295 @@
+{
+    "banjara hills": 
+    [
+      {
+        "name": "Electronic Recycling",
+        "address": "8-2-601/G/292, Gouri Shankar Nagar Colony, Banjara Hills, Hyderabad, Telangana 500034",
+        "phoneNumber": "08042781891"
+      },
+      {
+        "name": "Z Enviro Industries Pvt Ltd",
+        "address": "Door No 8-2-686/pd/b5, 1st Floor, Prime Dwelling Apartments, Banjara Hills, Hyderabad - 500034 (Opposite Kotak Mahindra Bank)",
+        "phoneNumber": "07947120366"
+      }
+    ],
+    "kothapet": 
+    [
+      {
+        "name": "Global scrap mart",
+        "address": "11-13-749/2, Dena Bank Colony, Green Hills Colony, Kothapet, Hyderabad, Telangana 500035",
+        "phoneNumber": "094903 44078"
+      }
+    ],
+    "lb nagar": 
+    [
+      {
+        "name": "E Fino",
+        "address": "3-7-2/6, Sri sai Nagar colony, Mansoorabad, L.B.Nagar, Hyderabad, Telangana 500068",
+        "phoneNumber": "033 4164 4564"
+      }
+    ],
+    "hayathnagar": 
+    [
+      {
+        "name": "Megha Ewaste Management",
+        "address": "PLot no 14 Telangana Padmavathi Colony Anmagal Road No 3, Hayathnagar_Khalsa, Telangana 501505",
+        "phoneNumber": "NA"
+      }
+    ],
+    "kurmaguda": 
+    [
+      {
+        "name": "Re Sustainability and Recycling Pvt Limited",
+        "address": "25/A, Hardware Park, Srisailam Highway Road Kurmaguda, near International Airport, Hyderabad, Telangana 500005",
+        "phoneNumber": "090321 24522"
+      }
+    ],
+    "narsingi": 
+    [
+      {
+        "name": "Zolopik",
+        "address": "1, H.No: 3-7/38, Khaswa Enclave, Marva Road, Narsingi, Hyderabad, Telangana 500075",
+        "phoneNumber": "097434 40440"
+      }
+    ],
+    "begumpet": 
+    [
+      {
+        "name": "Unitscrap",
+        "address": " 326, Laxmi Nilayam, opp. Indian Express Office, Begumpet, Hyderabad, Telangana 500016",
+        "phoneNumber": "040 2341 8944"
+      }
+    ],
+    "malakpet": 
+    [
+      {
+        "name": "Crapbin",
+        "address": "16-9-749/95, Race Course Rd, Papaiah Basthi, Old Malakpet, Hyderabad, Telangana 500036",
+        "phoneNumber": "077999 96096"
+      },
+      {
+        "name": "GREEN WAVE E WASTE RCYCLING",
+        "address": "9GJ5+F4Q, Parvathi Puram, Afzal Nagar, Malakpet Extension, Old Malakpet, Hyderabad, Telangana 500036",
+        "phoneNumber": "NA"
+      }
+    ],
+    "hitech city": 
+    [
+      {
+        "name": "E WASTE RECYCLING",
+        "address": "2-41/5/1, Ghousia Masjid Rd, Vinayaka Nagar, HITECH City, Khanammet, Hyderabad, Telangana 500084",
+        "phoneNumber": "080 4513 4312"
+      }
+    ],
+    "lakdikapul": 
+    [
+      {
+        "name": "S D Recycling Process Industries E Waste",
+        "address": "near Income Tex Tower, AC Guards, Lakdikapul, Hyderabad, Telangana 500004",
+        "phoneNumber": "088585 42674"
+      }
+    ],
+    "bachupally": [
+      {
+        "name": "Waste Ventures India",
+        "address": " 30, Bollaram Rd, KBR Colony, Bachupally, Miyapur, Hyderabad, Telangana 500049",
+        "phoneNumber": "0360 782 7887"
+      }
+    ],
+    "musheerabad": [
+      {
+        "name": "Electronic Scrap Dealers",
+        "address": "4-308/3/b, Musheerabad, Bhagyalaxmi Nagar, Bhoiguda, Hyderabad, Telangana 500080",
+        "phoneNumber": "080 4803 4829"
+      }
+    ],
+    "ameerpet": [
+      {
+        "name": "Scrap it",
+        "address": "Ameerpet, near Vijaya taxtile, Telangana 500016",
+        "phoneNumber": "NA"
+      }
+    ],
+    "kothaguda": [
+      {
+        "name": "Electronic Scrap Buyers In Hyderabad",
+        "address": "2-42/1, Raghavendra Colony, Kothaguda, Hyderabad, Telangana 500084",
+        "phoneNumber": "081439 61128"
+      }
+    ],
+    "jubilee hills": [
+      {
+        "name": "Waste Management Solutions Pvt Ltd",
+        "address": "2nd Floor, Anitha Enclave, Road Number 10, behind Southern Spice Restaurant, Jubilee Hills, Hyderabad, Telangana 500033",
+        "phoneNumber": "076111 19999"
+      }
+    ],
+    "somajiguda": [
+      {
+        "name": "Go Green Recyclers",
+        "address": "Raj Bhavan Rd, Somajiguda, Hyderabad, Telangana 500082",
+        "phoneNumber": "NA"
+      },
+      {
+        "name": "ScrapQ",
+        "address": "Thakur Mansion Ln, Durga Nagar Colony, Somajiguda, Hyderabad, Telangana 500082",
+        "phoneNumber": "040 3070 7070"
+      }
+    ],
+    "kukatpally": [
+      {
+        "name": "Pure Earth Recyclers Pvt. Ltd",
+        "address": "Plot No, 167c, opp. JNTU, Addagutta Society, Western Hills, Jal Vayu Vihar, Kukatpally, Hyderabad, Telangana 500072",
+        "phoneNumber": "NA"
+      },
+      {
+        "name": "Envirokare Recycling Solutions Private Limited",
+        "address": "A, 48, A.S.Raju Nagar, Vivekananda Nagar, Kukatpally, Hyderabad, Telangana 500066",
+        "phoneNumber": "09885207171"
+      }
+    ],
+    "gachibowli": [
+      {
+        "name": "E-WASTE EXCHANGE",
+        "address": "IIITH Himalaya, Road, Gachibowli, Hyderabad, Telangana 500032",
+        "phoneNumber": "08874299358"
+      },
+      {
+        "name": "ELifecycle Management Pvt Ltd (ELIMA)",
+        "address": "502 , 5th floor , Siri Sampadha Arcade III, near Andhra Bank, Madhura Nagar Colony, Gachibowli, Hyderabad, Telangana 500089",
+        "phoneNumber": "09032124522"
+      },
+      {
+        "name": "E-Waste Recycling process company",
+        "address": "79, Indira Nagar, Gachibowli, Hyderabad, Telangana 500032",
+        "phoneNumber": "09966555719"
+      }
+    ],
+    "secunderabad": [
+      {
+        "name": "E-Waste Recycler And Traders",
+        "address": "Musheerabad, Bholakpur, Bhoiguda, Secunderabad, Hyderabad, Telangana 500020",
+        "phoneNumber": "NA"
+      },
+      {
+        "name": "E Waste Recyclers INDIA",
+        "address": "Door No 95-A-1-2-64/3/1, Park Lane-Secunderabad, Secunderabad - 500003",
+        "phoneNumber": "08197555179"
+      },
+      {
+        "name": "S D Recycling Process Industries E Waste",
+        "address": " near Income Tex Tower, AC Guards, Lakdikapul, Hyderabad, Telangana 500004",
+        "phoneNumber": "088585 42674"
+      },
+      {
+        "name": "E-Waste Recycling",
+        "address": " HIG A48, Sainathpuram, A. S. Rao Nagar, Secunderabad, Telangana 500066",
+        "phoneNumber": "098852 07171"
+      },
+      {
+        "name": "Electrician services",
+        "address": "Trimulgherry - ECIL Rd, Malkajgiri, Secunderabad, Telangana 500047",
+        "phoneNumber": "063096 11093"
+      },
+      {
+        "name": "Wamivara enterprises",
+        "address": " Indira Nehru Nagar, Hanumanpet, Malkajgiri, Secunderabad, Telangana 500047",
+        "phoneNumber": "063030 00240"
+      },
+      {
+        "name": "Flora Recycling",
+        "address": "Swapnalok Complex, 402, 4th Floor, SD Road, Secunderabad, Telangana 500003",
+        "phoneNumber": "093464 81447"
+      },
+      {
+        "name": "Electronic Scrap Dealers",
+        "address": "4-308/3/b, Musheerabad, Bhagyalaxmi Nagar, Bhoiguda, Hyderabad, Telangana 500080",
+        "phoneNumber": "080 4803 4829"
+      }
+    ],
+    "mumbai": [
+      {
+        "name": "Ecotech Recycling- E waste recycling Mumbai, E-Waste Recycling, E Waste Management in India",
+        "address": "301, 3rd Floor, Bldg. No. 11, Commercial Tower, near Trade Center, Bandra Kurla Complex, Bandra East, Mumbai, Maharashtra 400051",
+        "phoneNumber": "090045 47542"
+      },
+      {
+        "name": "E-Waste Recycling Company",
+        "address": "90 Feet Road Sakinaka, Andheri East, Mumbai, Maharashtra 400072",
+        "phoneNumber": "09819631409"
+      },
+      {
+        "name": "E-waste E-green recycle Our destruction or path is our responsibility",
+        "address": "Swatantrya Veer Savarkar, Lokmanya Tilak Nagar, Saki Naka, Mumbai, Maharashtra 400072",
+        "phoneNumber": "087807 37371"
+      },
+      {
+        "name": "Ecostar Recycling - E Waste Recycling Mumbai, Recycling Centre",
+        "address": "1st Floor, Unit No 31-32, Khuraiya Estate, CST Road, opposite Ashok Apartments, Kolivery Village, Kunchi Kurve Nagar, Kalina, Santacruz East, Mumbai, Maharashtra 400098",
+        "phoneNumber": "082910 55055"
+      },
+      {
+        "name": "E Waste Recycling India",
+        "address": "Madina Manzil, Kedarmal Rd, near Asha Amar Building, Malad, Malad (E, Mumbai, Maharashtra 400097",
+        "phoneNumber": "097690 77008"
+      },
+      {
+        "name": "E-Waste Mart - Electronic Waste Recycling Company in Mumbai, India",
+        "address": "GALA NO.36/ACTS NO. 362, PAHELWAN COMPOUND, 90 Feet Rd, Ashtavinayak CHS, Sathi D Souza Nagar, Saki Naka, Mumbai, Maharashtra 400072",
+        "phoneNumber": null
+      },
+      {
+        "name": "Eco Layer E-Waste Recycling",
+        "address": "25, Gupta Compound, MIDC Road No.11, Nr.Maruti High School Andheri (E, Maharashtra 400093",
+        "phoneNumber": "098207 50836"
+      },
+      {
+        "name": "E-Incarnation Recycling Pvt. Ltd.",
+        "address": "Unit No. 103, 1st Floor, BHAVESHWAR ARCADE, A Wing, Lal Bahadur Shastri Marg, near Shreyas Cinema Road, Nityanand Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",
+        "phoneNumber": "022 4749 4262"
+      }
+    ],
+    "delhi": [
+      {
+        "name": "E-waste Recyclers | New India Network",
+        "address": "608A, Devika Tower, Nehru Place, New Delhi, Delhi 110019",
+        "phoneNumber": "098710 27926"
+      },
+      {
+        "name": "E-waste recycling company in delhi",
+        "address": "Sector 3, Pushp Vihar, New Delhi, Delhi 110017",
+        "phoneNumber": "09816651409"
+      },
+      {
+        "name": "E Waste Recycle Hub",
+        "address": "BK-1/160, 1st Floor, Poorbi Shalimar Bag, Delhi 110088",
+        "phoneNumber": "1800 123 005 566"
+      },
+      {
+        "name": "E-Waste Recycling in India",
+        "address": "Aneja Complex, R-24, Rita Block, Shakarpur, New Delhi, Delhi 110092",
+        "phoneNumber": "097173 93992"
+      },
+      {
+        "name": "GREEN E-WASTE RECYCLERS PVT. LTD",
+        "address": "97-A, DDA Flats, Shastri Park,, New Delhi, Delhi 110053",
+        "phoneNumber": "099113 46644"
+      },
+      {
+        "name": "E Waste Recyclers, India",
+        "address": "Nirmal Villa, No. 14, Sitapuri, Dwarka, New Delhi, Delhi 110045",
+        "phoneNumber": "098103 98787"
+      },
+      {
+        "name": "E-Waste Recyclers India",
+        "address": " A-46, near Crowne Plaza, Pocket C, Okhla Phase I, Okhla, New Delhi, Delhi 110020",
+        "phoneNumber": "1800 102 5679"
+      },
+      {
+        "name": "Greenzon E-waste Recycler Delhi",
+        "address": "Deepali Building, F 509, Block G 6, Nehru Place, New Delhi, Delhi 110019",
+        "phoneNumber": "098112 06076"
+      }
+    ]
+  }
+  

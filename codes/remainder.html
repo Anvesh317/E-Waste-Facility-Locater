@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E Waste Facility Locator</title>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        top: 0;
+        height: 80vh;
+        bottom: 0;
+        width: 100%;
+      }
+
+      li {
+        margin-bottom: 20px;
+      }
+    </style>
+    <script
+      src="https://js.sentry-cdn.com/9c5feb5b248b49f79a585804c259febc.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style/style.css" />
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+
+  <body class="container-fluid" onload="bodyload()">
+    <!-- Header -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div class="row">
+            <br />
+            <div class="col-xs-12 col-sm-12">
+              <center>
+                <h2><strong>E Waste Facility Locator</strong></h2>
+              </center>
+            </div>
+          </div>
+          <br /><br />
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div
+                class="collapse navbar-collapse"
+                id="bs-example-navbar-collapse-1"
+              >
+                <ul class="nav navbar-nav navbar-left">
+                  <a class="navbar-brand" href="index.html"></a>
+                  <li>
+                    <a href="index.html"
+                      ><span class="glyphicon glyphicon-home"></span> Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html"
+                      ><span class="fa fa-question-circle-o"></span> About</a
+                    >
+                  </li>
+                  <li>
+                    <a href="service.html"
+                      ><span class="fa fa-question-circle-o"></span> Service</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contactus.html"
+                      ><span class="glyphicon glyphicon-phone"></span> Contact
+                      us</a
+                    >
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                      ><i class="fa fa-sign-in"></i> Sign In<span
+                        class="caret"
+                      ></span
+                    ></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="login.html"
+                          ><span class="fa fa-sign-in"></span> Sign In
+                        </a>
+                      </li>
+                      <li>
+                        <a href="register.html"
+                          ><span class="fa fa-user-plus"></span> Sign Up
+                        </a>
+                      </li>
+                      <li>
+                        <a href="password.html"
+                          ><span class="fa fa-unlock-alt"></span> Change
+                          Password
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--Header end-->
+
+          <!-- Body content from Code 2 -->
+          <div id="map" class="mapboxgl-map">
+            <div class="mapboxgl-canary" style="visibility: hidden"></div>
+            <div
+              class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"
+            >
+              <canvas
+                class="mapboxgl-canvas"
+                tabindex="0"
+                aria-label="Map"
+                role="region"
+                width="1905"
+                height="505"
+                style="width: 1523.2px; height: 404px"
+              ></canvas>
+            </div>
+            <div class="mapboxgl-control-container">
+              <div class="mapboxgl-ctrl-top-left"></div>
+              <div class="mapboxgl-ctrl-top-right"></div>
+              <div class="mapboxgl-ctrl-bottom-left">
+                <div class="mapboxgl-ctrl" style="display: block">
+                  <a
+                    class="mapboxgl-ctrl-logo"
+                    target="_blank"
+                    rel="noopener nofollow"
+                    href="https://www.mapbox.com/"
+                    aria-label="Mapbox logo"
+                  ></a>
+                </div>
+              </div>
+              <div class="mapboxgl-ctrl-bottom-right">
+                <div class="mapboxgl-ctrl mapboxgl-ctrl-attrib">
+                  <button
+                    class="mapboxgl-ctrl-attrib-button"
+                    type="button"
+                    aria-label="Toggle attribution"
+                  >
+                    <span
+                      class="mapboxgl-ctrl-icon"
+                      aria-hidden="true"
+                      title="Toggle attribution"
+                    ></span>
+                  </button>
+                  <div class="mapboxgl-ctrl-attrib-inner" role="list">
+                    <a
+                      href="https://www.mapbox.com/about/maps/"
+                      target="_blank"
+                      title="Mapbox"
+                      aria-label="Mapbox"
+                      >© Mapbox</a
+                    >
+                    <a
+                      href="https://www.openstreetmap.org/about/"
+                      target="_blank"
+                      title="OpenStreetMap"
+                      aria-label="OpenStreetMap"
+                      >© OpenStreetMap</a
+                    >
+                    <a
+                      class="mapbox-improve-map"
+                      href="https://apps.mapbox.com/feedback/?owner=mapbox&amp;id=streets-v12&amp;access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2p0MG01MXRqMW45cjQzb2R6b2ptc3J4MSJ9.zA2W0IkI0c6KaAhJfk9bWg#/-122.66232/45.52375/12"
+                      target="_blank"
+                      aria-label="Map feedback"
+                      rel="noopener nofollow"
+                      >Improve this map</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 50px">.</div>
+          <!-- New div -->
+          <div class="mt-3 row">
+            <div class="col-12">
+              <ul id="facilitiesList" class="list-unstyled"></ul>
+            </div>
+          </div>
+          <!-- New div end -->
+          <script>
+            mapboxgl.accessToken =
+              "pk.eyJ1IjoibWF0c2E5MTc3MzY2NTc4IiwiYSI6ImNsbXJiMmIyZjA2OXQyaXBpeGQwa3d0MG8ifQ.xhYxSwTG3YJS1US5_qgoxQ";
+            const map = new mapboxgl.Map({
+              container: "map",
+              style: "mapbox://styles/mapbox/streets-v12",
+              center: [78.38479, 17.52401519],
+              zoom: 12,
+            });
+
+            const eWasteCollectorData = [
+              <!--Hyderabad-->
+
+              { name: "Collector 1", coordinates: [78.373, 17.43] },
+              { name: "Collector 2", coordinates: [78.373, 17.43] },
+              { name: "Collector 3", coordinates: [78.358, 17.441] },
+              { name: "Collector 4", coordinates: [78.356, 17.429] },
+              { name: "Collector 5", coordinates: [78.357, 17.47] },
+
+              { name: "Collector 6", coordinates: [78.439, 17.416] },
+              { name: "Collector 7", coordinates: [72.862, 19.064] },
+              { name: "Collector 8", coordinates: [72.887, 19.098] },
+              { name: "Collector 9", coordinates: [72.891, 19.094] },
+              { name: "Collector 10", coordinates: [72.845, 19.173] },
+              { name: "Collector 11", coordinates: [72.948, 19.164] },
+              { name: "Collector 12", coordinates: [73.728, 18.596] },
+              { name: "Collector 13", coordinates: [72.824, 19.128] },
+
+              { name: "Collector 14", coordinates: [77.256, 28.547] },
+              { name: "Collector 15", coordinates: [77.221, 28.518] },
+              { name: "Collector 16", coordinates: [77.155, 28.713] },
+              { name: "Collector 17", coordinates: [77.281, 28.631] },
+              { name: "Collector 18", coordinates: [77.253, 28.686] },
+              { name: "Collector 19", coordinates: [77.076, 28.608] },
+              { name: "Collector 20", coordinates: [77.276, 28.546] },
+              { name: "Collector 21", coordinates: [77.259, 28.546] },
+            ];
+
+            // Function to display e-waste collectors on the map
+            function displayEWasteCollectors(collectors) {
+              collectors.forEach((collector) => {
+                map.loadImage(
+                  "   https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png", // You can replace this URL with your own marker icon
+                  (error, image) => {
+                    if (error) throw error;
+
+                    map.addImage(`marker-${collector.name}`, image);
+
+                    map.addLayer({
+                      id: `collector-${collector.name}`,
+                      type: "symbol",
+                      source: {
+                        type: "geojson",
+                        data: {
+                          type: "FeatureCollection",
+                          features: [
+                            {
+                              type: "Feature",
+                              properties: {},
+                              geometry: {
+                                type: "Point",
+                                coordinates: collector.coordinates,
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      layout: {
+                        "icon-image": `marker-${collector.name}`,
+                        "icon-size": 1, // Adjust the size of the marker
+                        "icon-allow-overlap": true, // Allow markers to overlap
+                      },
+                    });
+                  }
+                );
+              });
+            }
+
+            // Function to search for e-waste collectors near a location
+            async function searchEWasteCollectors(location) {
+              // Use Mapbox Geocoding API to get coordinates for the entered location
+              const geocodingResponse = await fetch(
+                `https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?access_token=${mapboxgl.accessToken}`
+              );
+
+              const geocodingData = await geocodingResponse.json();
+
+              // Check if features array exists and has at least one element
+              if (geocodingData.features && geocodingData.features.length > 0) {
+                // Extract coordinates from the geocoding response (use the first result)
+                const coordinates = geocodingData.features[0].center;
+
+                // Center the map on the entered location
+                map.flyTo({ center: coordinates, zoom: 12 });
+
+                // Display e-waste collectors on the map based on the entered location
+                displayEWasteCollectors(eWasteCollectorData);
+              } else {
+                console.error(
+                  "Invalid or empty geocoding response:",
+                  geocodingData
+                );
+              }
+            }
+
+            // Example: Search for e-waste collectors when the user enters a location
+            const locationInput = prompt("Enter a location:");
+            if (locationInput) {
+              searchEWasteCollectors(locationInput);
+            }
+
+            // CODE
+            function bodyload() {
+              fetch("../data/address.json")
+                .then(function (response) {
+                  return response.json();
+                })
+                .then(function (data) {
+                  // Display facilities for the default city
+                  showFacilities(data[locationInput]);
+                })
+                .catch(function (err) {
+                  alert("Something went wrong: please contact site admin");
+                });
+            }
+
+            function showFacilities(facilities) {
+              var facilitiesList = document.getElementById("facilitiesList");
+              facilitiesList.innerHTML = ""; // Clear existing list
+
+              facilities.forEach(function (facility) {
+                var listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${facility.name}</strong><br>${
+                  facility.address
+                }<br>Phone: ${facility.phoneNumber || "N/A"}`;
+                facilitiesList.appendChild(listItem);
+              });
+            }
+            //CODE end
+          </script>
+
+          <!-- ... (remaining HTML code) ... -->
+
+          <!-- ... (remaining HTML code from Code 1) ... -->
+          <!-- Footer from Code 1 remains unchanged -->
+          <div class="row" id="footer">
+            <div class="col-xs-12 col-sm-12">
+              <center><strong>E Waste Facility Locator</strong></center>
+              <br />
+              <div class="col-xs-12 col-sm-1"></div>
+              <div class="col-xs-12 col-sm-3">
+                <ul>
+                  <li>
+                    <a><i class="fa fa-facebook"></i> Facebook</a>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-envelope"></i> Google</a>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-twitter"></i> Twitter</a>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-youtube"></i> Youtube</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-5">
+                <ul>
+                  <li>Name: E Waste Facility Locator</li>
+                  <li>Email: info@ewastefacility.com</li>
+                  <li>Contact: +91-xxxxxxxxxx</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Footer End -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Remainder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/style/style.css"/>
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/bootstrap.js"></script>
+    <script src="js/admin/main.js"></script>    
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12">
+<div class="row">
+<br>
+<div class="col-xs-12 col-sm-12">
+<center>
+<h2><strong>E Waste Facility Locater</strong></h3></center>
+</div>
+</div>
+<br><br> 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+</div>      
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav navbar-left">
+<a class="navbar-brand" href="index.html"></a>
+      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+
+      <li><a href="about.html"><span class="fa fa-question-circle-o"></span> About</a></li>
+      <li><a href="service.html"><span class="fa fa-question-circle-o"></span> Service</a></li>
+      <li><a href="contactus.html"><span class="glyphicon glyphicon-phone"></span> Contact us</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-sign-in"></i> Sign In<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="login.html"><span class="fa fa-sign-in"></span> Sign In </a></li>
+          <li><a href="register.html"><span class="fa fa-user-plus"></span> Sign Up </a></li>
+          <li><a href="password.html"><span class="fa fa-unlock-alt"></span> Change Password </a></li>
+        </ul>
+       </li> 
+  </ul> 
+     </div> 
+  </div>
+</nav>   
+<div class="d-flex mt-5 p-5" style="text-align: justify;">
+  <div>
+      <img src="https://lh3.googleusercontent.com/rd5XfyIGk8quHz8XlwSOUtgnvin1K3He-QlR16TChuSXaSXTFcAOVhdg_sIqVM6JMlw=s180" width="300px" height="300px">
+  </div>
+  <div class="mt-5 ms-3">
+      <div style="font-size: 20px; font-weight: bold;">INFO</div>
+      <p>Welcome to the E Waste Facility Locator, a cutting-edge web application dedicated to empowering users in the responsible disposal of electronic waste (e-waste) while championing environmental sustainability. Our platform harnesses the power of location services to seamlessly identify nearby e-waste facilities, offering users a streamlined and efficient method to locate proper disposal points. Upon entering their location, users are granted access to an interactive map displaying comprehensive information about nearby e-waste facilities, fostering awareness and encouraging eco-friendly practices.
+
+        Beyond its practical utility, our application serves as an educational hub, providing users with valuable insights into the environmental impact of e-waste, the significance of proper disposal, and the myriad benefits of recycling electronic devices. By promoting awareness, we aspire to contribute to the creation of a more informed and environmentally conscious community.
+        
+        To further incentivize users to participate in responsible e-waste disposal, our application introduces an innovative rewards system. Users who conscientiously recycle their electronic devices can input their recycling receipts into the platform, earning credits. These credits can be redeemed for a variety of items available at the redemption center within the application. This forward-thinking approach not only encourages proper e-waste disposal but also fosters a sense of community engagement, rewarding users for their environmentally responsible actions.
+        
+        In summary, the E Waste Facility Locator web application is designed to create a sustainable and informed community by facilitating easy access to e-waste disposal facilities, offering valuable educational resources, and providing tangible rewards for those committed to responsible recycling practices. Join us on this journey toward a greener and more sustainable future.</p>
+  </div>
+</div>
+<!-- Footer Start -->
+<br><br>
+<div class="row" id="footer">
+	<div class="col-xs-12 col-sm-12">
+<center><strong>E Waste Facility Locater</strong></center>
+<br>
+<div class="col-xs-12 col-sm-1"></div>
+<div class="col-xs-12 col-sm-3">
+<ul>
+ <li><a><i class ="fa fa-facebook"></i> Facebook</a></li>
+  <li><a><i class ="fa fa-envelope"></i> Google</a></li>
+ <li><a><i class ="fa fa-twitter"></i> Twitter</a></li>
+  <li><a><i class ="fa fa-youtube"></i> Youtube</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Service</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-5">
+<ul>
+  <li>Name : E Waste Facility Locater</li>
+  <li>Email : info@ewastefacility.com</li>
+  <li>Contact : +91-xxxxxxxxxx</li>
+</ul>
+</div>
+</div>						
+</div>
+<!-- Footer End -->
+</body>
+</html>
+<!-- Jquery Start -->
+<script type="text/javascript">
+$('.viewmodal').click(function () {
+    $('#id').text($(this).closest("tr").find('td:eq(0)').text());
+    $('#cname').text($(this).closest("tr").find('td:eq(1)').text());
+    $('#fname').text($(this).closest("tr").find('td:eq(2)').text());
+    $('#duration').text($(this).closest("tr").find('td:eq(3)').text());
+    $('#time').text($(this).closest("tr").find('td:eq(4)').text());
+    $('#desc').text($(this).closest("tr").find('td:eq(6)').text());
+
+    $('#myModal').modal('show');
+});
+</script>
+<!-- Jquery End -->
